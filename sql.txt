@@ -1,0 +1,13 @@
+create user test1 identified by test1;
+
+grant resource, connect to test1;
+
+conn test1/test1;
+
+create table member(
+    id varchar2(10) constraint mem_id_pk primary key,
+    pw varchar2(20) constraint mem_pw_nn not null,
+    name varchar2(20) constraint mem_name_nn not null,
+    joindate date default sysdate
+);
+
