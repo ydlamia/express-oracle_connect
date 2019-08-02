@@ -1,0 +1,16 @@
+form {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+#inputdiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#id,
+#pw {
+  display: inline;
+}
